@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Zalo – Rời nhóm hàng loạt",
+  "version": "2.0.0",
+  "description": "Rời lần lượt các nhóm trong kết quả tìm kiếm của Zalo Web.",
+  "action": {
+    "default_title": "Mở/ẩn bảng Rời nhóm"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.zalo.me/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "panel.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

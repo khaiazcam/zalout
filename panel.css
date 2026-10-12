@@ -1,0 +1,21 @@
+#zl-panel {
+  position: fixed; left: 38%; top: 50%; transform: translate(-50%, -50%); z-index: 2147483647;
+  width: 340px; max-height: 70vh; display: flex; flex-direction: column;
+  background: #fff; color: #1f2937; border: 1px solid #d1d5db; border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(0,0,0,.18); font: 13px/1.4 system-ui, sans-serif;
+}
+#zl-panel.zl-hidden { display: none; }
+#zl-panel header { padding: 10px 12px; font-weight: 600; background: #0068ff; color: #fff;
+  border-radius: 10px 10px 0 0; cursor: move; user-select: none; display: flex; justify-content: space-between; align-items: center; }
+#zl-panel header button { background: none; border: 0; color: #fff; font-size: 16px; cursor: pointer; }
+#zl-panel .zl-body { padding: 10px 12px; overflow: auto; display: flex; flex-direction: column; gap: 8px; }
+#zl-panel .zl-row { display: flex; gap: 6px; flex-wrap: wrap; }
+#zl-panel button.zl-btn { padding: 6px 10px; border-radius: 6px; border: 1px solid #0068ff;
+  background: #0068ff; color: #fff; cursor: pointer; }
+#zl-panel button.zl-btn.secondary { background: #fff; color: #0068ff; }
+#zl-panel button.zl-btn.danger { background: #e53935; border-color: #e53935; }
+#zl-panel button.zl-btn:disabled { opacity: .5; cursor: default; }
+#zl-panel .zl-log { max-height: 220px; overflow: auto; background: #f9fafb; border-radius: 6px;
+  padding: 6px; font: 11px/1.4 ui-monospace, monospace; white-space: pre-wrap; }
+#zl-panel input[type=number] { width: 60px; }
+#zl-panel header small { font-weight: 400; opacity: .9; }
